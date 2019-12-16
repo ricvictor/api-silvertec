@@ -1,0 +1,61 @@
+[
+    {
+      "model": "core.processor",
+      "pk": 1,
+      "fields": {
+        "product": "Processador Intel Core i5",
+        "model": "Intel"
+      }
+    },
+    {
+      "model": "core.processor",
+      "pk": 2,
+      "fields": {
+        "product": "Processador Intel Core i7",
+        "model": "Intel"
+      }
+    },
+    {
+        "model": "core.processor",
+        "pk": 3,
+        "fields": {
+          "product": "Processador AMD Athlon",
+          "model": "AMD"
+        }
+    },
+    {
+        "model": "core.processor",
+        "pk": 4,
+        "fields": {
+          "product": "Processador AMD Ryzen 7",
+          "model": "AMD"
+        }
+    },
+    {
+        "model": "core.motherboard",
+        "pk": 1,
+        "fields": {
+          "product": "Placa Mãe Asus Prime",
+          "support_processor": "Intel",
+          "slots_memory": 2,
+          "support_memory": 16,
+          "integrated_video": false
+        }
+    },
+    {
+        "model": "core.memory",
+        "pk": 1,
+        "fields": {
+          "product": "HyperX",
+          "size": "2"
+        }
+    },
+    {
+        "model": "core.memory",
+        "pk": 2,
+        "fields": {
+          "product": "HyperX",
+          "size": "4"
+        }
+    }
+  ]
