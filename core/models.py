@@ -30,8 +30,11 @@ class GraphicCard(models.Model):
 
 class BuildPC(models.Model):
     client = models.TextField()
-    processor = models.ForeignKey(Processor, on_delete=models.PROTECT)
-    motherboard = models.ForeignKey(Motherboard,on_delete=models.PROTECT)
+    processor = models.ForeignKey(Processor, on_delete=models.CASCADE)
+    motherboard = models.ForeignKey(Motherboard,on_delete=models.CASCADE)
     memory = models.ManyToManyField(Memory)
     qty_memory = models.IntegerField()
     graphic_card = models.ForeignKey(GraphicCard,on_delete=models.SET_NULL, null=True)
+
+    class Meta:
+        ordering = ('client',)
