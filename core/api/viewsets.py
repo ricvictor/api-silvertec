@@ -62,5 +62,6 @@ class PcBuilderViewSet(ModelViewSet):
         
         pc = BuildPC.objects.create(client=client,processor=processor,motherboard=motherboard,graphic_card=graphic_card)
         pc.memory.set(mem)
+        serializer = PcBuilderSerializer(pc)
 
-        return Response(status=status.HTTP_201_CREATED)
+        return Response(serializer.data,status=status.HTTP_201_CREATED)
