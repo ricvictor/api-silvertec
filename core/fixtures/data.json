@@ -33,7 +33,7 @@
     },
     {
         "model": "core.motherboard",
-        "pk": 1,
+        "pk": 10,
         "fields": {
           "product": "Placa Mãe Asus Prime",
           "support_processor": "Intel",
@@ -43,8 +43,30 @@
         }
     },
     {
+      "model": "core.motherboard",
+      "pk": 11,
+      "fields": {
+        "product": "Placa Mãe Gigabyte",
+        "support_processor": "AMD",
+        "slots_memory": 2,
+        "support_memory": 16,
+        "integrated_video": false
+      }
+    },
+    {
+      "model": "core.motherboard",
+      "pk": 12,
+      "fields": {
+        "product": "Placa Mãe ASRock Fatal",
+        "support_processor": "Intel e AMD",
+        "slots_memory": 4,
+        "support_memory": 64,
+        "integrated_video": true
+      }
+    },
+    {
         "model": "core.memory",
-        "pk": 1,
+        "pk": 20,
         "fields": {
           "product": "HyperX",
           "size": "2"
@@ -52,10 +74,63 @@
     },
     {
         "model": "core.memory",
-        "pk": 2,
+        "pk": 21,
         "fields": {
           "product": "HyperX",
           "size": "4"
         }
+    },
+    {
+      "model": "core.memory",
+      "pk": 22,
+      "fields": {
+        "product": "HyperX",
+        "size": "8"
+      }
+    },
+    {
+      "model": "core.memory",
+      "pk": 23,
+      "fields": {
+        "product": "HyperX",
+        "size": "16"
+      }
+    },
+    {
+      "model": "core.memory",
+      "pk": 24,
+      "fields": {
+        "product": "HyperX",
+        "size": "32"
+      }
+    },
+    {
+      "model": "core.memory",
+      "pk": 25,
+      "fields": {
+        "product": "HyperX",
+        "size": "64"
+      }
+    },
+    {
+      "model": "core.graphiccard",
+      "pk": 30,
+      "fields": {
+        "product": "Placa de Video Gigabyte Geforce GTX 1060 6GB"
+      }
+    },
+    {
+      "model": "core.graphiccard",
+      "pk": 31,
+      "fields": {
+        "product": "Placa de Video PNY RTX 2060 6GB"
+      }
+    },
+    {
+      "model": "core.graphiccard",
+      "pk": 32,
+      "fields": {
+        "product": "Placa de Video Radeon RX 580 8GB"
+      }
     }
   ]

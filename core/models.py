@@ -19,7 +19,7 @@ class Motherboard(models.Model):
         return self.product
 
 class Memory(models.Model):
-    product = models.TextField()
+    product = models.TextField(null=True)
     size = models.IntegerField()
 
     def __str__(self):
@@ -29,11 +29,10 @@ class GraphicCard(models.Model):
     product = models.TextField()
 
 class BuildPC(models.Model):
-    client = models.TextField()
+    client = models.TextField(null=True)
     processor = models.ForeignKey(Processor, on_delete=models.CASCADE)
     motherboard = models.ForeignKey(Motherboard,on_delete=models.CASCADE)
     memory = models.ManyToManyField(Memory)
-    qty_memory = models.IntegerField()
     graphic_card = models.ForeignKey(GraphicCard,on_delete=models.SET_NULL, null=True)
 
     class Meta:
