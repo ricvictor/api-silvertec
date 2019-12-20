@@ -56,6 +56,7 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'pc_builder.urls'
 
 REST_FRAMEWORK = {
+    'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema',
     'DEFAULT_FILTER_BACKENDS': ('django_filters.rest_framework.DjangoFilterBackend',),
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     'DEFAULT_PERMISSION_CLASSES': ('rest_framework.permissions.AllowAny',),
@@ -124,8 +125,14 @@ USE_L10N = True
 
 USE_TZ = True
 
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 
 # Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/2.2/howto/static-files/
-
+# https://docs.djangoproject.com/en/1.9/howto/static-files/
+STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
 STATIC_URL = '/static/'
+
+# Extra places for collectstatic to find static files.
+STATICFILES_DIRS = (
+    os.path.join(PROJECT_ROOT, 'static'),
+)
