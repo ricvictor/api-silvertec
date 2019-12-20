@@ -1,1 +1,1 @@
-web: gunicorn api-silvertec.wsgi --log-file -
+web: gunicorn pc_builder.wsgi --log-file -
