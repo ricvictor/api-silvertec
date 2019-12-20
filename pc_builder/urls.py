@@ -17,19 +17,15 @@ from django.contrib import admin
 from django.urls import path, include
 from rest_framework import routers, serializers, viewsets
 from rest_framework.routers import DefaultRouter
-from rest_framework.schemas import get_schema_view
 from rest_framework.documentation import include_docs_urls
 from core.api import viewsets
 
 router = routers.DefaultRouter()
 router.register(r'pcbuilder', viewsets.PcBuilderViewSet, basename='BuildPC')
 
-schema_view = get_schema_view(title='BuildPC API',
-                description='An API to build your own PC.')
-
 urlpatterns = [
     path('', include(router.urls)),
     path('admin/', admin.site.urls),
-    path('schema/', schema_view),
-    path('docs/', include_docs_urls(title='Build API')),
+    path('docs/', include_docs_urls(title='BuildPC API',public=False)),
+
 ]

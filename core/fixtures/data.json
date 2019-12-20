@@ -69,20 +69,12 @@
         "pk": 20,
         "fields": {
           "product": "HyperX",
-          "size": "2"
-        }
-    },
-    {
-        "model": "core.memory",
-        "pk": 21,
-        "fields": {
-          "product": "HyperX",
           "size": "4"
         }
     },
     {
       "model": "core.memory",
-      "pk": 22,
+      "pk": 21,
       "fields": {
         "product": "HyperX",
         "size": "8"
@@ -90,7 +82,7 @@
     },
     {
       "model": "core.memory",
-      "pk": 23,
+      "pk": 22,
       "fields": {
         "product": "HyperX",
         "size": "16"
@@ -98,7 +90,7 @@
     },
     {
       "model": "core.memory",
-      "pk": 24,
+      "pk": 23,
       "fields": {
         "product": "HyperX",
         "size": "32"
@@ -106,7 +98,7 @@
     },
     {
       "model": "core.memory",
-      "pk": 25,
+      "pk": 24,
       "fields": {
         "product": "HyperX",
         "size": "64"
