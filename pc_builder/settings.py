@@ -25,7 +25,7 @@ SECRET_KEY = 'r1n$gu-%q$3=m0lxp+7%1=8)g93u5z1_k372ajrk2iv@9el4ni'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['api-silvertec.herokuapp.com']
 
 
 # Application definition
