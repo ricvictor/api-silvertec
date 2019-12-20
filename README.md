@@ -3,10 +3,11 @@
 API com a funcionalidade de selecionar as peças de montagem do computador do cliente. Projeto criado para solução de um desafio.
 
 ## Funções da API
+* Cadastra os pedidos realizados pelos clientes.
 * Lista todos os pedidos realizados.
-* Filtro dos itens por meio do campo `client`
-* Detalhe de um pedido específico através do `id`. Ex http://127.0.0.1:8000/pcbuilder/10/
-* Filtro por pedidos feitos por um cliente. Ex http://127.0.0.1:8000/pcbuilder/?client=TesteCliente`
+* Filtro dos itens por meio do campo `client`.
+* Detalhe de um pedido específico através do `id`. Ex http://127.0.0.1:8000/pcbuilder/10/.
+* Filtro por pedidos feitos por um cliente. Ex http://127.0.0.1:8000/pcbuilder/?client=TesteCliente`.
 
 # Parâmetros
  A API trabalha com a seguinte estrutura:
